@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bildbearbeitung und Manipulation für Sie</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="application/x-javascript">addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }</script>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/move-top.js" type="text/javascript"></script>
+    <script src="js/easing.js" type="text/javascript"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#slider1").responsiveSlides({
+           auto: true,
+           nav: true,
+           speed: 500,
+           namespace: "callbacks",
+        });
+      });
+      
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="slider">
+        <ul id="slider1" class="rslides">
+          <li><img src="img/banner.jpg" alt="Orion Bildbearbeitung">
+            <div class="header-matter">
+              <h2>we. make</h2>
+              <label class="make"></label>
+              <div class="matter-we"><a href="#" class="we-better"><span> </span></a>
+                <div class="better">
+                  <h4>Your</h4>
+                  <label>Business Better</label>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- END Header-->
+    <div class="top-header">
+      <div class="container">
+        <div class="logo"><a href="#"><img src="img/logo.png" alt="Orion Logo"></a></div>
+        <div class="top-nav">
+          <label class="menu"></label>
+          <ul>
+            <li class="active"><a href="#home" class="scroll">Home<span class="home"></span></a></li>
+            <li><a href="#home" class="scroll">About<span class="home"></span></a></li>
+            <li><a href="#home" class="scroll">Contact<span class="home"></span></a></li>
+          </ul>
+          <script type="text/javascript">
+            $("label.menu").click(function(){
+                $(".top-nav ul").slideToggle(700, function(){
+                });
+            });
+          </script>
+          <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $(".scroll").click(function(event){     
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+                });
+            });
+          </script>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <!-- END Top-Header-->
+    <div class="content">
+      <div id="about" class="global-design">
+        <div class="container">
+          <div class="idea-get"><a href="#"><img src="img/ca.png" alt="">
+              <h4>GET IDEA</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a></div>
+          <div class="idea-get"><a href="#"><img src="img/gla.png" alt="">
+              <h4>GET IDEA</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a></div>
+          <div class="idea-get we-get-grid"><a href="#"><img src="img/glo.png" alt="">
+              <h4>GET IDEA</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a></div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <!-- END About-->
+      <div id="portfolio" class="portfolio">
+        <div class="container">
+          <div class="portfolio-top">
+            <h3>SHOWCASING YOUR PORTFOLIO</h3><img src="img/li-1.png" alt="" class="img-responsive line-grid">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <a class="base-line" href="#">incididunt ut labore</a> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <a class="base-line" href="#">exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="portfolio-bottom">
+            <div class="portfolio-tin"><img src="img/1.jpg" alt="" class="img-responsive phone-red">
+              <div class="arrow-place">
+                <p>placerat ligula tincidunt</p><span> </span>
+              </div>
+            </div>
+            <div class="portfolio-tin"><img src="img/2.jpg" alt="" class="img-responsive phone-red">
+              <div class="arrow-place">
+                <p>placerat ligula tincidunt</p><span> </span>
+              </div>
+            </div>
+            <div class="portfolio-tin"><img src="img/3.jpg" alt="" class="img-responsive phone-red">
+              <div class="arrow-place">
+                <p>placerat ligula tincidunt</p><span> </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Portfolio-->
+      <!-- Image Spacer-->
+      <div class="back-grid"></div>
+      <div id="contact" class="contact">
+        <div class="container">
+          <div class="contact-top">
+            <h3>Get in Touch</h3><img src="img/li-1.png" alt="" class="img-responsive line-grid">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <b>incididunt ut labore</b> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <b>exercitation</b>.</p>
+          </div>
+          <form>
+            <div class="contact-grid">
+              <h3>FORM HERE</h3>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- END Contact END Content-->
+      
+    </div>
+    <div class="footer">
+      <div class="footer-grid-bottom">
+        <div class="container">
+          <div class="col m4">
+            <h6>About us</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="col m4">
+            <h6>Menu</h6>
+            <ul>
+              <li><a href="#">Top</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Portfolio</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-class">&copy; 2016 by <a href="#" target="_blank">Orion</a> </p>
+      </div>
+      <script type="text/javascript">
+        $(document).ready(function() {
+                /*
+                var defaults = {
+                    containerID: 'toTop', // fading element id
+                    containerHoverID: 'toTopHover', // fading element hover id
+                    scrollSpeed: 1200,
+                    easingType: 'linear' 
+                };
+                */
+                
+                $().UItoTop({ easingType: 'easeOutQuart' });
+                
+            });
+      </script><a id="toTop" href="#" style="display:block;"><span id="toTopHover" style="opacity:1;"></span></a>
+    </div>
+  </body>
+</html>

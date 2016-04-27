@@ -1,0 +1,128 @@
+vertical-align()
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+transition()
+    -moz-transition:    0.3s ease-in-out all;
+    -o-transition:      0.3s ease-in-out all;
+    -webkit-transition: 0.3s ease-in-out all;
+    transition:         0.3s ease-in-out all;
+
+sm = 480px
+md = 768px
+lg = 992px
+
+.offer-section
+    width 100%
+    position relative
+    filter grayscale(100%) contrast(10%) brightness(170%)
+    transition()
+    
+    &.offer-section-1
+        background url(../img/retouch.png)
+        background-size cover
+        background-position center
+        .right-img
+            background none
+    &.offer-section-2
+        background url(../img/mani.png)
+        background-size cover
+        background-position center
+        .left-img
+            background none
+    &.offer-section-3
+        background url(../img/color.jpg)
+        background-size cover
+        background-position center
+        .right-img
+            background none
+    .left, .middle, .right
+        width 100%
+        display block
+        color #fff
+        box-sizing border-box
+        left 0
+        padding 30px
+        text-align center
+        overflow hidden
+        transition()
+        
+        .content
+            @media screen and (min-width: sm)
+                vertical-align()
+                
+        @media screen and (min-width: sm)
+            width 50%
+            font-size 0.9em
+            padding 10px
+            left 0
+            float left
+            position absolute
+        
+        @media screen and (min-width: md)
+            width 33.33333%
+            left 33.33%
+            padding 10px
+            
+        @media screen and (min-width: lg)
+            padding 30px
+            font-size 1em
+    &.animate
+        filter grayscale(0%) contrast(100%) brightness(100%)
+        
+        &.offer-section-1
+            .right-img
+                background url(../img/retouch.gif) no-repeat
+                background-size cover
+                background-position center
+        &.offer-section-2
+            .left-img
+                background url(../img/ps.gif) no-repeat
+                background-size cover
+                background-position center
+        &.offer-section-3
+            .right-img
+                background url(../img/color.gif) no-repeat
+                background-size cover
+                background-position center
+        .left
+            left 0
+            @media screen and (min-width: sm)
+                left 50%
+            @media screen and (min-width: md)
+                left 0
+        .right
+            left 0
+            @media screen and (min-width: sm)
+                left 50%
+            @media screen and (min-width: md)
+                left 66.666%
+    .title
+        background s-bgd
+        h2
+            margin-top 0
+        p
+            line-height:1.55em;
+            margin-bottom: 0.75em
+        a.btn
+            background s-ad
+            
+    .middle
+        background: tomato;
+        z-index: 2;
+        padding:0;
+        img
+            width: 100%;
+            height: auto;
+            display:block;
+    .left-img, .right-img
+        background: tomato;
+        z-index: 1;
+        padding:0;
+        img
+            width: 100%;
+            height: 100%;
+            display:block;

@@ -1,0 +1,169 @@
+doctype html
+html
+    head
+        title Bildbearbeitung und Manipulation für Sie
+        link(rel="stylesheet", href="css/materialize.css")
+        link(rel="stylesheet", href="css/style.css" media="all")
+        meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+        script(type="application/x-javascript").
+            addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+        link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800", type="text/css")
+        script(src="js/jquery.min.js")
+        script(src="js/move-top.js", type="text/javascript")
+        script(src="js/easing.js", type="text/javascript")
+        script(src="js/responsiveslides.min.js")
+        script(type='text/javascript').
+            $(function () {
+              $("#slider1").responsiveSlides({
+                 auto: true,
+                 nav: true,
+                 speed: 500,
+                 namespace: "callbacks",
+              });
+            });
+
+    body
+        .header
+            .slider
+                ul.rslides#slider1
+                    li
+                        img(src="img/banner.jpg", alt="Orion Bildbearbeitung")
+                        .header-matter
+                            h2 we. make
+                            label.make
+                            .matter-we
+                                a.we-better(href="#")
+                                    span  
+                                .better
+                                    h4 Your
+                                    label Business Better
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                .clearfix
+        // END Header
+
+        .top-header
+            .container
+                .logo
+                    a(href="#")
+                        img(src="img/logo.png", alt="Orion Logo")
+                .top-nav
+                    label.menu
+                    ul
+                        li.active
+                            a.scroll(href="#home") Home
+                                span.home
+                        li
+                            a.scroll(href="#home") About
+                                span.home
+                        li
+                            a.scroll(href="#home") Contact
+                                span.home
+                    script(type='text/javascript').
+                        $("label.menu").click(function(){
+                            $(".top-nav ul").slideToggle(700, function(){
+                            });
+                        });
+                    script(type='text/javascript').
+                        jQuery(document).ready(function($) {
+                            $(".scroll").click(function(event){     
+                                event.preventDefault();
+                                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+                            });
+                        });
+                .clearfix
+        // END Top-Header
+
+        .content
+            .global-design#about
+                .container
+                    .idea-get
+                        a(href="#")
+                            img(src="img/ca.png", alt="")
+                            h4 GET IDEA
+                            p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    .idea-get
+                        a(href="#")
+                            img(src="img/gla.png", alt="")
+                            h4 GET IDEA
+                            p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    .idea-get.we-get-grid
+                        a(href="#")
+                            img(src="img/glo.png", alt="")
+                            h4 GET IDEA
+                            p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    .clearfix
+            // END About
+
+            .portfolio#portfolio
+                .container
+                    .portfolio-top
+                        h3 SHOWCASING YOUR PORTFOLIO
+                        img.img-responsive.line-grid(src="img/li-1.png", alt="")
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <a class="base-line" href="#">incididunt ut labore</a> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <a class="base-line" href="#">exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    .portfolio-bottom
+                        .portfolio-tin
+                            img.img-responsive.phone-red(src="img/1.jpg", alt="")
+                            .arrow-place
+                                p placerat ligula tincidunt
+                                span  
+                        .portfolio-tin
+                            img.img-responsive.phone-red(src="img/2.jpg", alt="")
+                            .arrow-place
+                                p placerat ligula tincidunt
+                                span  
+                        .portfolio-tin
+                            img.img-responsive.phone-red(src="img/3.jpg", alt="")
+                            .arrow-place
+                                p placerat ligula tincidunt
+                                span  
+            // END Portfolio
+            
+            // Image Spacer
+            .back-grid
+            
+            .contact#contact
+                .container
+                    .contact-top
+                        h3 Get in Touch
+                        img.img-responsive.line-grid(src="img/li-1.png", alt="")
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <b>incididunt ut labore</b> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <b>exercitation</b>.
+                    form
+                        .contact-grid
+                            h3 FORM HERE
+            // END Contact END Content
+
+
+        .footer
+            .footer-grid-bottom
+                .container
+                    .col.m4
+                        h6 About us
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    .col.m4
+                        h6 Menu
+                        ul
+                            li
+                                a(href="#") Top
+                            li
+                                a(href="#") About
+                            li
+                                a(href="#") Portfolio
+            .footer-bottom
+                p.footer-class &copy; 2016 by <a href="#" target="_blank">Orion</a> 
+            script(type='text/javascript').
+                $(document).ready(function() {
+                        /*
+                        var defaults = {
+                            containerID: 'toTop', // fading element id
+                            containerHoverID: 'toTopHover', // fading element hover id
+                            scrollSpeed: 1200,
+                            easingType: 'linear' 
+                        };
+                        */
+                        
+                        $().UItoTop({ easingType: 'easeOutQuart' });
+                        
+                    });
+            a#toTop(href="#", style="display:block;")
+                span#toTopHover(style="opacity:1;")

@@ -1,0 +1,49 @@
+red = #f44336
+grey = #9e9e9e
+blue = #01579b
+a-blue = #00b0ff
+green = #7cb342
+
+.input-field label {
+     color grey
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+ color: a-blue;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus,
+textarea.materialize-textarea:focus {
+ border-bottom: 1px solid a-blue;
+ box-shadow: 0 1px 0 0 a-blue;
+}
+/* valid color */
+.input-field input[type=text].valid
+textarea.materialize-textarea.valid {
+ border-bottom: 1px solid green;
+ box-shadow: 0 1px 0 0 green;
+}
+
+.input-field input[type=text].valid + label,
+textarea.materialize-textarea.valid + label {
+  color green
+}
+/* invalid color */
+.input-field input[type=text].invalid
+textarea.materialize-textarea.invaid {
+ border-bottom: 1px solid red;
+ box-shadow: 0 1px 0 0 red;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+ color: a-blue;
+}
+
+textarea.materialize-textarea,
+input[type=text]
+  border-bottom 1px solid grey
+
+textarea.materialize-textarea:focus:not([readonly]) + label
+  color a-blue
+textarea.materialize-textarea:focus:not([readonly])
+  border-bottom 1px solid a-blue

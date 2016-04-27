@@ -1,0 +1,1 @@
+!function($){var e=$(".before"),t=$(".before img").width(),f=Math.round(t/2);e.width(f),$(".before_after_slider").mousemove(function(t){var f=t.offsetX||t.clientX-e.offset().left;e.width(f)}),$(".before_after_slider").mouseleave(function(){e.stop().animate({width:f},1e3)})}(jQuery);

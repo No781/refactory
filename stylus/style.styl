@@ -1,0 +1,83 @@
+// RED BLUE GENERIC
+s-bgb = #97aabd
+s-bgd = #263340
+s-a = #fa706b
+s-ad = #3d5266
+
+// BRogrammer
+// s-bgb = #ecd06f
+// s-bgd = #343434
+// s-a = #df6c4f
+// s-ad = #1a99aa
+
+// s-bgb = #2c9fc4
+// s-bgd = #444444
+// s-a = #00b9a2
+// s-ad = #2c9fc4
+// s-a2 = #fbe380
+
+@import "offer.styl"
+@import "words.styl"
+@import "form.styl"
+
+body
+    color s-bgd
+.navbar-fixed
+    nav
+        background s-bgd
+        padding 0 20%
+
+#hero
+    .hero-title
+        position: absolute
+        left: 0
+        right: 0
+        top: 300px
+        z-index: 997
+    .slides
+        li:after
+            content: "";
+            background: url(../img/tile.png) repeat;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: 10;
+
+#intro
+    padding-top 50px
+    padding-bottom 150px
+    .header
+        padding 50px 0
+    .promo
+        padding 30px
+        color s-bgd
+        i
+            color s-a
+        
+.parallax-container
+    max-height 300px
+    &.parallax-intro
+        margin-top -20px
+
+#contact
+    padding-top 50px
+    padding-bottom 50px
+    button.btn
+        background s-bgb
+
+.modal
+    top 0 !important
+    max-height 90%
+    width 90%
+    bottom: 0
+    
+
+#footer
+    display flex
+    background s-ad
+    ul
+        display flex
+        li
+            width 25%
